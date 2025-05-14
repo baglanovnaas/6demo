@@ -68,5 +68,8 @@ function show() {
         `;
         total += cart[i].price * cart[i].sany;
     }
-    box.innerHTML += `<p>Total: $${total}</p>`;
+    box.innerHTML += `
+        <p>Total: $${total}</p>
+        <button style="margin-bottom: 10px;">Confirm Rental</button>
+    `;
 };
